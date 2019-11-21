@@ -1,2 +1,5 @@
 # CreativAI-UC.github.io
-Web page of creative AI project
+
+---
+
+Webpage of creative AI project from Pontificia Universidad Católica de Chile
