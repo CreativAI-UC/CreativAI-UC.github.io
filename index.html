@@ -58,11 +58,10 @@ We are a group of interdisciplinary researchers and students at PUC Chile workin
 
 
 
-<p>
-<b>Subproyecto 1: Timbre</b> 
-<br/> En este proyecto, Agustin Macaya utiliza autoencoders variacionales para que una red neuronal artificial aprenda directamente a generar audio (en lugar de otras representaciones intermedias como MIDI o piano rolls). El siguiente video presenta un resumen y ejemplos del proyecto. Más detalles técnicos en el repositorio <a href="https://github.com/CreativAI-UC/Timbre">github de Timbre</a>.
-</p>
-
+<h2>
+Subproyecto 1: Timbre
+</h2>
+<p>En este proyecto, Agustin Macaya utiliza autoencoders variacionales para que una red neuronal artificial aprenda directamente a generar audio (en lugar de otras representaciones intermedias como MIDI o piano rolls). El siguiente video presenta un resumen y ejemplos del proyecto. Más detalles técnicos en el repositorio <a href="https://github.com/CreativAI-UC/Timbre">github de Timbre</a>.</p>
 <video poster="https://avatars0.githubusercontent.com/u/56734809?s=200&v=4" id="player" playsinline controls width="450px" height="300px">
     <source src="/video/timbre2_vae.mp4" type="video/mp4" />
 
@@ -70,13 +69,50 @@ We are a group of interdisciplinary researchers and students at PUC Chile workin
     <!--track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en" default /-->
 </video>
 
-<p>
-<b>Subproject 2: Conditional GANs</b> Manuel Cartagena...
-</p>
+<br>
+<br>
 
-<p>
-<b>anothe subproject</b> text for another subproject
-</p>
+<h2>
+Subproject 2: Conditional GAN
+</h2>
+
+<p>En este proyecto, Manuel Cartagena utiliza generative adversarial networks para que un par de redes neuronales artificiales aprendan a generar una representación musical llamada pianorolls, los cuales se transforman en MIDI para poder ser tocados por algun instrumento virtual. En las siguientes imágenes se presentan las arquitecturas de las redes y ejemplos del proyecto.</p>
+
+<h3>Red Generadora</h3>
+<p>Esta parte de la red toma como entrada ruido aleatorio y lo convierte en un pianoroll mediante deconvoluciones, las cuales transforman un tensor a otro de mayor tamaño</p>
+<img src="/images/CGAN_generator.png" alt="Generator">
+
+<h3>Red Discriminadora</h3>
+<p>Esta segunda red es la encargada de tomar un pianoroll y determinar si es un ejemplo lo suficientemente real en comparación a los datos de entrenamiento, la finalidad de esta red es que aprenda a discriminar cuando un ejemplo es generado por la red generadora versus datos reales. De esta manera al entrenar ambas redes en conjunto, la red generadora aprende a entregar ejemplos que parezcan reales con respecto a los datos.</p>
+<img src="/images/CGAN_discriminator.png" alt="Disciminator">
+
+<h4>Ejemplos generados por la red neuronal:</h4>
+<p>Como los pianorolls son una representación de la música, estos fueron transformados a MIDI y luego tocados por un instrumento virtual, esto da pie a que se puedan usar distintos sonidos.</p>
+
+<audio controls>
+  <source src="/audio/sample4.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<audio controls>
+  <source src="/audio/sample0.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<audio controls>
+  <source src="/audio/sample1.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<audio controls>
+  <source src="/audio/sample2.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<audio controls>
+  <source src="/audio/sample3.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
 
 
 
