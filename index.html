@@ -72,6 +72,7 @@ Subproyecto 1: TimbreNet
 <br>
 <br>
 
+<hr/>        
 <h2>
 Subproject 2: Conditional GAN
 </h2>
@@ -81,11 +82,14 @@ Subproject 2: Conditional GAN
 <h3>Red Generadora</h3>
 <p>Esta parte de la red toma como entrada ruido aleatorio y lo convierte en un pianoroll mediante deconvoluciones, las cuales transforman un tensor a otro de mayor tamaño</p>
 <img src="/images/CGAN_generator.png" alt="Generator">
-
+<br/>
+        
 <h3>Red Discriminadora</h3>
 <p>Esta segunda red es la encargada de tomar un pianoroll y determinar si es un ejemplo lo suficientemente real en comparación a los datos de entrenamiento, la finalidad de esta red es que aprenda a discriminar cuando un ejemplo es generado por la red generadora versus datos reales. De esta manera al entrenar ambas redes en conjunto, la red generadora aprende a entregar ejemplos que parezcan reales con respecto a los datos.</p>
 <img src="/images/CGAN_discriminator.png" alt="Disciminator">
-
+<br/>
+<br/>
+        
 <h4>Ejemplos generados por la red neuronal:</h4>
 <p>Como los pianorolls son una representación de la música, estos fueron transformados a MIDI y luego tocados por un instrumento virtual, esto da pie a que se puedan usar distintos sonidos.</p>
 
